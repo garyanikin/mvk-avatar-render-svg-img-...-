@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img mask-image</title>
+  </head>
+  <body>
+    <style>
+      img {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      }
+    </style>
+    <script>
+      function render() {
+        return toDom(`
+<img width="60" height="60" src="./vk_large.jpg">`);
+      }
+
+      function toDom(str) {
+        return document.createRange().createContextualFragment(str);
+      }
+    </script>
+    <script src="./experiment.js"></script>
+    <div id="content"></div>
+  </body>
+</html>

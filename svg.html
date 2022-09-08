@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG only</title>
+  </head>
+  <body>
+    <script>
+      function render() {
+        return toDom(`
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
+  <defs>
+    <mask id="mask">
+      <ellipse cx="50%" cy="50%" rx="50%" ry="50%" fill="white"></ellipse>
+    </mask>
+  </defs>
+  <image xlink:href="./vk_large.jpg" width="60" height="60" mask="url(#mask)"></image>
+</svg>`);
+      }
+
+      function toDom(str) {
+        return document.createRange().createContextualFragment(str);
+      }
+    </script>
+    <script src="./experiment.js"></script>
+    <div id="content"></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="400px" height="400px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <polygon stroke-linejoin="round" style="fill:none;stroke:url(#a);" vector-effect="non-scaling-stroke" stroke-width="4"
+    points="141.652838955286,191.246505659316 58.3471610447144,191.246505659316 6.40692043054493,126.11550400049 24.9441776830691,44.8984733622455 100,8.75349434068389 175.055822316931,44.8984733622455 193.593079569455,126.11550400049" />
+  <defs>
+    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#2EE6A8" />
+      <stop offset=".344" stop-color="#39F" />
+      <stop offset=".693" stop-color="#93F" />
+      <stop offset="1" stop-color="#F39" />
+    </linearGradient>
+  </defs>
+</svg>
